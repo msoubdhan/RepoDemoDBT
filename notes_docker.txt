@@ -1,0 +1,2 @@
+docker build -t postgredocker -f Dockerfile .
+docker run --name postgredocker  -p 5442:5432 -e POSTGRES_PASSWORD=test2021 -d postgres
