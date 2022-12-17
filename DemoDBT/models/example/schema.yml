@@ -2,20 +2,15 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: src
+    description: "source generated data"
     columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+      - name: txt
+        description: "generated data"
 
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
+  - name: inject_raw
+    description: "source included data"
     columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+      - name: first_name
+        description: "included first_name"
+
